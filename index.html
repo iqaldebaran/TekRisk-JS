@@ -2,20 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tek Risk</title>
-    <!-- Libreria para busqueda tipo fuzzyLogic -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min.js"></script> -->
-    <!-- Libreria JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <!-- Libreria para DataTables -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/sl-1.2.6/datatables.min.css" />
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/sl-1.2.6/datatables.min.js"></script>
-    <!-- <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
-    <style type="text/css" class="init"> </style> -->
 
 
 </head>
@@ -23,15 +27,85 @@
 <body>
 
     <div>
-        <h2>Sustancia: <span id="name-chem"></span></h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-chemicals-db">
+            Launch demo modal
+        </button>
+        <button type="button" id="btnCenterMap" class="btn btn-primary">
+            Center Map
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="modal-chemicals-db" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- CONTENIDO DEL MODAL -->
+                        <div class="table">
+                            <table id="data-table" class="table table-hover" width="100%"></table>
+                        </div>
+                        <!-- ------------------- -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-second" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- CONTENIDO DEL MODAL -->
+                        <div>
+                            <h2>Sustancia: <span id="name-chem"></span></h2>
+
+                            <h3>Nueb</h3>
+                        </div>
+                        <!-- ------------------- -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <table id="example" class="display hover compact" width="100%"></table>
 
-    <!-- SCRIPTS -->
-    <script type="text/javascript" src="DBCHEM.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="PoolFIre.js"></script>
+    <!-- Start your project here-->
+    <!-- GOOGLE MAPS -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">fds adsf ff Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor velit neque sunt voluptates alias, maiores qui laudantium quis, atque voluptate sit aliquid pariatur! Sint sequi tenetur laboriosam aliquid iusto!</div>
+            <div id="map" class="col-10"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- /Start your project here-->
+
+    <!-- ----------------------------- -->
+    <!-- ----SCRIPTS TEK-RISK--------- -->
+    <!-- ----------------------------- -->
+    <script src="./db/DBCHEM.js"></script>
+    <script src="./js/data-table.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/PoolFIre.js"></script>
+
+    <!-- ----------------------------- -->
+    <!-- SCRIPTS GOOGLE MAPS-->
+    <!-- ----------------------------- -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgjG12MNl68sJOYlXIMZBoKcNCLuqPtxE&callback=initMap"
+        async defer></script>
+
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
 
 </body>
 

@@ -1,41 +1,67 @@
-//alert(data[0].tb);
-// ver fusejs.io
-document.getElementById("name-chem").innerHTML = data[122].name;
+// Llamado a la funcion que presenta la tabla
+dataTable();
+var myLatLng = {lat: 19.298897, lng: -99.624777};
 
-//----BUSQUEDA POR FUSEJS.IO ------
-// var options = {
-//     shouldSort: true,
-//     threshold: 0.6,
-//     location: 0,
-//     distance: 100,
-//     maxPatternLength: 32,
-//     minMatchCharLength: 1,
-//     keys: [
-//       "name", "cas"
-//   ]
-//   };
-//   var fuse = new Fuse(data, options); // "list" is the item array
-//   var result = fuse.search("lpg");
+function initMap() {
+   myLatLng;
 
-// Para ver que fila se tecleeo: https://www.w3schools.com/jsref/prop_tablerow_rowindex.asp
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+  
 
-// https://toni-heittola.github.io/js-datatable/#parameters
+}
+
+document.getElementById("btnCenterMap").addEventListener("click", marker1) 
+
+function marker1(){
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 20,
+    center: myLatLng,
+    mapTypeId: 'satellite'
+  });
+  map.setTilt(0); //Al acercarse el mapa no se pone en 45ª
+   var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!',
+    draggable: true
+  });
+  console.log(marker.position.lat())
+
+  var circle = new google.maps.Circle({
+    fillColor: "red",
+    map:map,
+    draggable: true,
+    radius: 30
+  })
+
+  var circle2 = new google.maps.Circle({
+    position: myLatLng,
+    fillColor: "green",
+    map:map,
+    draggable: true,
+    radius: 60
+  })
+
+  // Se unes los dos ciculos y el marker
+  circle.bindTo("center", marker, "position");
+
+circle2.bindTo("center", marker, "position");
 
 
-$('#example').DataTable({
-    data: data,
-    columns: [{
-            data: "name"
-        },
-        {
-            data: "cas"
-        },
-    ]
-});
-var table = $('#example').DataTable();
+}
 
-$('#example tbody').on('click', 'tr', function () {
-    document.getElementById("name-chem").innerHTML = data[table.row(this).index()].tb;
 
-   // alert('Row index: ' + table.row(this).index());
-});
+// const drawMap = (obj) => {
+//   let map = new google.maps.Map(document.getElementById("map"), {
+//     center: obj,
+//     zoom: 10
+//   })
+//   let marcadorUsuario = new google.maps.Marker({
+//     position: obj,
+//     title: "Mi ubicacion"
+//   })
+// }
+

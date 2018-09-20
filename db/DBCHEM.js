@@ -1,6 +1,6 @@
 
 var data = [{
-"idd":"1",
+idd:"1",
 "cas":"353-59-3",
 "formula":"CBrCIF2",
 "name":"BROMOCHLORODIFLUOROMETHANE",

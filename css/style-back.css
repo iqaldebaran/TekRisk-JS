@@ -1,0 +1,27 @@
+.table {
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+
+tbody {
+  cursor: pointer;
+}
+
+/* .search {
+  float: left;
+} */
+
+.dataTables_filter{
+  /* background-color: grey; */
+  width: 100%;
+}
+
+.dataTables_filter input{
+  float: left;
+  background-color: rgb(164, 193, 240); 
+width: 100% !important;
+height: 40px;
+}
