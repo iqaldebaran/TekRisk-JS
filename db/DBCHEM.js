@@ -3044,7 +3044,7 @@ var data = [{
 {
 "idd":"40",
 "cas":"67-56-1",
-"formula":"CH40",
+"formula":"CH4O",
 "name":"METHANOL",
 "mw":"32.042",
 "tf":"175.47",
@@ -10064,7 +10064,7 @@ var data = [{
 {
 "idd":"130",
 "cas":"64-17-5",
-"formula":"C2H60",
+"formula":"C2H6O",
 "name":"ETHANOL",
 "mw":"46.069",
 "tf":"159.05",
@@ -16460,7 +16460,7 @@ var data = [{
 {
 "idd":"212",
 "cas":"67-63-0",
-"formula":"C3H80",
+"formula":"C3H8O",
 "name":"ISOPROPANOL",
 "mw":"60.096",
 "tf":"185.28",
@@ -16616,7 +16616,7 @@ var data = [{
 {
 "idd":"214",
 "cas":"71-23-8",
-"formula":"C3H80",
+"formula":"C3H8O",
 "name":"n-PROPANOL",
 "mw":"60.096",
 "tf":"146.95",
@@ -16694,7 +16694,7 @@ var data = [{
 {
 "idd":"215",
 "cas":"109-86-4",
-"formula":"C3H802",
+"formula":"C3H8O2",
 "name":"2-METHOXYETHANOL",
 "mw":"76.095",
 "tf":"188.05",
@@ -25196,7 +25196,7 @@ var data = [{
 {
 "idd":"324",
 "cas":"71-36-3",
-"formula":"C4H100",
+"formula":"C4H10O",
 "name":"n-BUTANOL",
 "mw":"74.123",
 "tf":"183.85",
@@ -25274,7 +25274,7 @@ var data = [{
 {
 "idd":"325",
 "cas":"78-92-2",
-"formula":"C4H100",
+"formula":"C4H10O",
 "name":"sec-BUTANOL",
 "mw":"74.123",
 "tf":"158.45",
@@ -25352,7 +25352,7 @@ var data = [{
 {
 "idd":"326",
 "cas":"75-65-0",
-"formula":"C4H100",
+"formula":"C4H10O",
 "name":"tert-BUTANOL",
 "mw":"74.123",
 "tf":"298.97",
@@ -25664,7 +25664,7 @@ var data = [{
 {
 "idd":"330",
 "cas":"78-83-1",
-"formula":"C4H100",
+"formula":"C4H10O",
 "name":"ISOBUTANOL",
 "mw":"74.123",
 "tf":"165.15",
@@ -26132,7 +26132,7 @@ var data = [{
 {
 "idd":"336",
 "cas":"110-80-5",
-"formula":"C4H1002",
+"formula":"C4H10O2",
 "name":"2-ETHOXYETHANOL",
 "mw":"90.122",
 "tf":"9999.0",
@@ -27458,7 +27458,7 @@ var data = [{
 {
 "idd":"353",
 "cas":"111-42-2",
-"formula":"C4H11N02",
+"formula":"C4H11NO2",
 "name":"DIETHANOLAMINE",
 "mw":"105.137",
 "tf":"301.15",
@@ -27536,7 +27536,7 @@ var data = [{
 {
 "idd":"354",
 "cas":"929-06-6",
-"formula":"C4H11N02",
+"formula":"C4H11NO2",
 "name":"2-AMINOETHOXYETHANOL",
 "mw":"105.137",
 "tf":"9999.0",
@@ -27614,7 +27614,7 @@ var data = [{
 {
 "idd":"355",
 "cas":"111-41-1",
-"formula":"C4H12N20",
+"formula":"C4H12N2O",
 "name":"N-AMINOETHYL ETHANOLAMINE",
 "mw":"104.152",
 "tf":"9999.0",
@@ -34322,7 +34322,7 @@ var data = [{
 {
 "idd":"441",
 "cas":"75-84-3",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"2-2-DIMETHYL-1-PROPANOL",
 "mw":"88.15",
 "tf":"327.15",
@@ -34478,7 +34478,7 @@ var data = [{
 {
 "idd":"443",
 "cas":"137-32-6",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"2-METHYL-1-BUTANOL",
 "mw":"88.15",
 "tf":"9999.0",
@@ -34556,7 +34556,7 @@ var data = [{
 {
 "idd":"444",
 "cas":"75-85-4",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"2-METHYL-2-BUTANOL",
 "mw":"88.15",
 "tf":"264.35",
@@ -34634,7 +34634,7 @@ var data = [{
 {
 "idd":"445",
 "cas":"123-51-3",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"3-METHYL-1-BUTANOL",
 "mw":"88.15",
 "tf":"155.95",
@@ -34712,7 +34712,7 @@ var data = [{
 {
 "idd":"446",
 "cas":"598-75-4",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"3-METHYL-2-BUTANOL",
 "mw":"88.15",
 "tf":"9999.0",
@@ -34790,7 +34790,7 @@ var data = [{
 {
 "idd":"447",
 "cas":"71-41-0",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"1-PENTANOL",
 "mw":"88.15",
 "tf":"195.56",
@@ -34868,7 +34868,7 @@ var data = [{
 {
 "idd":"448",
 "cas":"6032-29-7",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"2-PENTANOL",
 "mw":"88.15",
 "tf":"200.0",
@@ -34946,7 +34946,7 @@ var data = [{
 {
 "idd":"449",
 "cas":"584-02-1",
-"formula":"C5H120",
+"formula":"C5H12O",
 "name":"3-PENTANOL",
 "mw":"88.15",
 "tf":"204.15",
@@ -35570,7 +35570,7 @@ var data = [{
 {
 "idd":"457",
 "cas":"111-77-3",
-"formula":"C5H1203",
+"formula":"C5H12O3",
 "name":"2-(2-METHOXYETHOXY)ETHANOL",
 "mw":"120.148",
 "tf":"197.15",
@@ -36116,7 +36116,7 @@ var data = [{
 {
 "idd":"464",
 "cas":"105-59-9",
-"formula":"C5H13N02",
+"formula":"C5H13NO2",
 "name":"METHYL DIETHANOLAMINE",
 "mw":"119.164",
 "tf":"252.15",
@@ -39158,7 +39158,7 @@ var data = [{
 {
 "idd":"503",
 "cas":"108-95-2",
-"formula":"C6H60",
+"formula":"C6H6O",
 "name":"PHENOL",
 "mw":"94.113",
 "tf":"314.06",
@@ -44462,7 +44462,7 @@ var data = [{
 {
 "idd":"571",
 "cas":"108-93-0",
-"formula":"C6H120",
+"formula":"C6H12O",
 "name":"CYCLOHEXANOL",
 "mw":"100.161",
 "tf":"296.6",
@@ -46880,7 +46880,7 @@ var data = [{
 {
 "idd":"602",
 "cas":"97-95-0",
-"formula":"C6H140",
+"formula":"C6H14O",
 "name":"2-ETHYL-1-BUTANOL",
 "mw":"102.177",
 "tf":"158.75",
@@ -46958,7 +46958,7 @@ var data = [{
 {
 "idd":"603",
 "cas":"111-27-3",
-"formula":"C6H140",
+"formula":"C6H14O",
 "name":"1-HEXANOL",
 "mw":"102.177",
 "tf":"228.55",
@@ -47036,7 +47036,7 @@ var data = [{
 {
 "idd":"604",
 "cas":"626-93-7",
-"formula":"C6H140",
+"formula":"C6H14O",
 "name":"2-HEXANOL",
 "mw":"102.177",
 "tf":"223.0",
@@ -47114,7 +47114,7 @@ var data = [{
 {
 "idd":"605",
 "cas":"105-30-6",
-"formula":"C6H140",
+"formula":"C6H14O",
 "name":"2-METHYL-1-PENTANOL",
 "mw":"102.177",
 "tf":"9999.0",
@@ -47192,7 +47192,7 @@ var data = [{
 {
 "idd":"606",
 "cas":"108-11-2",
-"formula":"C6H140",
+"formula":"C6H14O",
 "name":"4-METHYL-2-PENTANOL",
 "mw":"102.177",
 "tf":"9999.0",
@@ -47660,7 +47660,7 @@ var data = [{
 {
 "idd":"612",
 "cas":"111-76-2",
-"formula":"C6H1402",
+"formula":"C6H14O2",
 "name":"2-BUTOXYETHANOL",
 "mw":"118.176",
 "tf":"203.15",
@@ -48128,7 +48128,7 @@ var data = [{
 {
 "idd":"618",
 "cas":"111-90-0",
-"formula":"C6H1403",
+"formula":"C6H14O3",
 "name":"2-(2-ETHOXYETHOXY)ETHANOL",
 "mw":"134.175",
 "tf":"195.15",
@@ -49454,7 +49454,7 @@ var data = [{
 {
 "idd":"635",
 "cas":"110-97-4",
-"formula":"C6H15N02",
+"formula":"C6H15NO2",
 "name":"DIISOPROPANOLAMINE",
 "mw":"133.191",
 "tf":"318.15",
@@ -49532,7 +49532,7 @@ var data = [{
 {
 "idd":"636",
 "cas":"102-71-6",
-"formula":"C6H15N03",
+"formula":"C6H15NO3",
 "name":"TRIETHANOLAMINE",
 "mw":"149.19",
 "tf":"294.35",
@@ -53588,7 +53588,7 @@ var data = [{
 {
 "idd":"688",
 "cas":"150-76-5",
-"formula":"C7H802",
+"formula":"C7H8O2",
 "name":"p-METHOXYPHENOL",
 "mw":"124.139",
 "tf":"329.0",
@@ -56474,7 +56474,7 @@ var data = [{
 {
 "idd":"725",
 "cas":"590-67-0",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"1-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"299.15",
@@ -56552,7 +56552,7 @@ var data = [{
 {
 "idd":"726",
 "cas":"7443-70-1",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"cis-2-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"280.15",
@@ -56630,7 +56630,7 @@ var data = [{
 {
 "idd":"727",
 "cas":"7443-52-9",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"trans-2-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"269.15",
@@ -56708,7 +56708,7 @@ var data = [{
 {
 "idd":"728",
 "cas":"5454-79-5",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"cis-3-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"267.65",
@@ -56786,7 +56786,7 @@ var data = [{
 {
 "idd":"729",
 "cas":"7443-55-2",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"trans-3-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"272.65",
@@ -56864,7 +56864,7 @@ var data = [{
 {
 "idd":"730",
 "cas":"7731-28-4",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"cis-4-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"9999.0",
@@ -56942,7 +56942,7 @@ var data = [{
 {
 "idd":"731",
 "cas":"7731-29-5",
-"formula":"C7H140",
+"formula":"C7H14O",
 "name":"trans-4-METHYLCYCLOHEXANOL",
 "mw":"114.188",
 "tf":"9999.0",
@@ -58502,7 +58502,7 @@ var data = [{
 {
 "idd":"751",
 "cas":"111-70-6",
-"formula":"C7H160",
+"formula":"C7H16O",
 "name":"1-HEPTANOL",
 "mw":"116.203",
 "tf":"239.15",
@@ -58580,7 +58580,7 @@ var data = [{
 {
 "idd":"752",
 "cas":"543-49-7",
-"formula":"C7H160",
+"formula":"C7H16O",
 "name":"2-HEPTANOL",
 "mw":"116.203",
 "tf":"243.0",
@@ -58658,7 +58658,7 @@ var data = [{
 {
 "idd":"753",
 "cas":"627-98-5",
-"formula":"C7H160",
+"formula":"C7H16O",
 "name":"5-METHYL-1-HEXANOL",
 "mw":"116.203",
 "tf":"9999.0",
@@ -60920,7 +60920,7 @@ var data = [{
 {
 "idd":"782",
 "cas":"620-17-7",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"m-ETHYLPHENOL",
 "mw":"122.167",
 "tf":"9999.0",
@@ -60998,7 +60998,7 @@ var data = [{
 {
 "idd":"783",
 "cas":"123-07-9",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"p-ETHYLPHENOL",
 "mw":"122.167",
 "tf":"318.23",
@@ -61232,7 +61232,7 @@ var data = [{
 {
 "idd":"786",
 "cas":"526-75-0",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"2-3-XYLENOL",
 "mw":"122.167",
 "tf":"345.71",
@@ -61310,7 +61310,7 @@ var data = [{
 {
 "idd":"787",
 "cas":"105-67-9",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"2-4-XYLENOL",
 "mw":"122.167",
 "tf":"297.68",
@@ -61388,7 +61388,7 @@ var data = [{
 {
 "idd":"788",
 "cas":"95-87-4",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"2-5-XYLENOL",
 "mw":"122.167",
 "tf":"347.99",
@@ -61466,7 +61466,7 @@ var data = [{
 {
 "idd":"789",
 "cas":"576-26-1",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"2-6-XYLENOL",
 "mw":"122.167",
 "tf":"318.76",
@@ -61544,7 +61544,7 @@ var data = [{
 {
 "idd":"790",
 "cas":"95-65-8",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"3-4-XYLENOL",
 "mw":"122.167",
 "tf":"338.25",
@@ -61622,7 +61622,7 @@ var data = [{
 {
 "idd":"791",
 "cas":"108-68-9",
-"formula":"C8H100",
+"formula":"C8H10O",
 "name":"3-5-XYLENOL",
 "mw":"122.167",
 "tf":"336.59",
@@ -66224,7 +66224,7 @@ var data = [{
 {
 "idd":"850",
 "cas":"104-76-7",
-"formula":"C8H180",
+"formula":"C8H18O",
 "name":"2-ETHYL-1-HEXANOL",
 "mw":"130.23",
 "tf":"203.15",
@@ -66302,7 +66302,7 @@ var data = [{
 {
 "idd":"851",
 "cas":"111-87-5",
-"formula":"C8H180",
+"formula":"C8H18O",
 "name":"1-OCTANOL",
 "mw":"130.23",
 "tf":"257.65",
@@ -66380,7 +66380,7 @@ var data = [{
 {
 "idd":"852",
 "cas":"123-96-6",
-"formula":"C8H180",
+"formula":"C8H18O",
 "name":"2-OCTANOL",
 "mw":"130.23",
 "tf":"241.55",
@@ -69968,7 +69968,7 @@ var data = [{
 {
 "idd":"898",
 "cas":"617-94-7",
-"formula":"C9H120",
+"formula":"C9H12O",
 "name":"2-PHENYL-2-PROPANOL",
 "mw":"136.194",
 "tf":"309.15",
@@ -73946,7 +73946,7 @@ var data = [{
 {
 "idd":"949",
 "cas":"108-82-7",
-"formula":"C9H200",
+"formula":"C9H20O",
 "name":"2-6-DIMETHYL-4-HEPTANOL",
 "mw":"144.257",
 "tf":"208.0",
@@ -74024,7 +74024,7 @@ var data = [{
 {
 "idd":"950",
 "cas":"143-08-8",
-"formula":"C9H200",
+"formula":"C9H20O",
 "name":"1-NONANOL",
 "mw":"144.257",
 "tf":"268.15",
@@ -74102,7 +74102,7 @@ var data = [{
 {
 "idd":"951",
 "cas":"70419-06-6",
-"formula":"C9H200",
+"formula":"C9H20O",
 "name":"2-NONANOL",
 "mw":"144.257",
 "tf":"238.15",
@@ -77378,7 +77378,7 @@ var data = [{
 {
 "idd":"993",
 "cas":"98-54-4",
-"formula":"C10H140",
+"formula":"C10H14O",
 "name":"p-tert-BUTYLPHENOL",
 "mw":"150.221",
 "tf":"371.56",
@@ -85178,7 +85178,7 @@ var data = [{
 {
 "idd":"1093",
 "cas":"112-30-1",
-"formula":"C10H220",
+"formula":"C10H22O",
 "name":"1-DECANOL",
 "mw":"158.284",
 "tf":"280.05",
@@ -85334,7 +85334,7 @@ var data = [{
 {
 "idd":"1095",
 "cas":"55505-26-5",
-"formula":"C10H220",
+"formula":"C10H22O",
 "name":"ISODECANOL",
 "mw":"158.284",
 "tf":"213.15",
@@ -86426,7 +86426,7 @@ var data = [{
 {
 "idd":"1109",
 "cas":"80-46-6",
-"formula":"C11H160",
+"formula":"C11H16O",
 "name":"p-tert-AMYLPHENOL",
 "mw":"164.247",
 "tf":"366.0",
@@ -87050,7 +87050,7 @@ var data = [{
 {
 "idd":"1117",
 "cas":"112-42-5",
-"formula":"C11H240",
+"formula":"C11H24O",
 "name":"1-UNDECANOL",
 "mw":"172.311",
 "tf":"289.05",
@@ -90872,7 +90872,7 @@ var data = [{
 {
 "idd":"1166",
 "cas":"112-53-8",
-"formula":"C12H260",
+"formula":"C12H26O",
 "name":"1-DODECANOL",
 "mw":"186.338",
 "tf":"296.95",
@@ -93134,7 +93134,7 @@ var data = [{
 {
 "idd":"1195",
 "cas":"112-70-9",
-"formula":"C13H280",
+"formula":"C13H28O",
 "name":"1-TRIDECANOL",
 "mw":"200.365",
 "tf":"303.75",
@@ -94850,7 +94850,7 @@ var data = [{
 {
 "idd":"1217",
 "cas":"140-66-9",
-"formula":"C14H220",
+"formula":"C14H22O",
 "name":"p-tert-OCTYLPHENOL",
 "mw":"206.328",
 "tf":"358.55",
@@ -95318,7 +95318,7 @@ var data = [{
 {
 "idd":"1223",
 "cas":"112-72-1",
-"formula":"C14H300",
+"formula":"C14H30O",
 "name":"1-TETRADECANOL",
 "mw":"214.392",
 "tf":"310.65",
@@ -96098,7 +96098,7 @@ var data = [{
 {
 "idd":"1233",
 "cas":"599-64-4",
-"formula":"C15H160",
+"formula":"C15H16O",
 "name":"p-CUMYLPHENOL",
 "mw":"212.291",
 "tf":"346.0",
@@ -96176,7 +96176,7 @@ var data = [{
 {
 "idd":"1234",
 "cas":"80-05-7",
-"formula":"C15H1602",
+"formula":"C15H16O2",
 "name":"BISPHENOL A",
 "mw":"228.291",
 "tf":"426.15",
@@ -96566,7 +96566,7 @@ var data = [{
 {
 "idd":"1239",
 "cas":"25154-52-3",
-"formula":"C15H240",
+"formula":"C15H24O",
 "name":"NONYLPHENOL",
 "mw":"220.355",
 "tf":"9999.0",
@@ -97112,7 +97112,7 @@ var data = [{
 {
 "idd":"1246",
 "cas":"629-76-5",
-"formula":"C15H320",
+"formula":"C15H32O",
 "name":"1-PENTADECANOL",
 "mw":"228.417",
 "tf":"317.04",
@@ -98672,7 +98672,7 @@ var data = [{
 {
 "idd":"1266",
 "cas":"36653-82-4",
-"formula":"C16H340",
+"formula":"C16H34O",
 "name":"1-HEXADECANOL",
 "mw":"242.445",
 "tf":"322.35",
@@ -99764,7 +99764,7 @@ var data = [{
 {
 "idd":"1280",
 "cas":"1454-85-9",
-"formula":"C17H360",
+"formula":"C17H36O",
 "name":"1-HEPTADECANOL",
 "mw":"256.472",
 "tf":"327.05",
@@ -101090,7 +101090,7 @@ var data = [{
 {
 "idd":"1297",
 "cas":"60-33-3",
-"formula":"C18H3202",
+"formula":"C18H32O2",
 "name":"LINOLEIC ACID",
 "mw":"280.451",
 "tf":"268.15",
@@ -101948,7 +101948,7 @@ var data = [{
 {
 "idd":"1308",
 "cas":"112-92-5",
-"formula":"C18H380",
+"formula":"C18H38O",
 "name":"1-OCTADECANOL",
 "mw":"270.499",
 "tf":"331.05",
@@ -103274,7 +103274,7 @@ var data = [{
 {
 "idd":"1325",
 "cas":"1454-84-8",
-"formula":"C19H400",
+"formula":"C19H40O",
 "name":"1-NONADECANOL",
 "mw":"284.524",
 "tf":"334.87",
@@ -105848,7 +105848,7 @@ var data = [{
 {
 "idd":"1358",
 "cas":"1323-65-5",
-"formula":"C24H420",
+"formula":"C24H42O",
 "name":"DINONYLPHENOL",
 "mw":"346.597",
 "tf":"9999.0",
@@ -106082,7 +106082,7 @@ var data = [{
 {
 "idd":"1361",
 "cas":"8006-61-9",
-"formula":"XXXX",
+"formula":"C8H18",
 "name":"GASOLINE",
 "mw":"115.0",
 "tf":"253.0",
