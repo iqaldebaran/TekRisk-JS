@@ -370,7 +370,9 @@ class PoolFire {
   probitPrcFatalidades(te, x) {
     let probit = this.probit(te, x);
     if(probit < 0) {
-      return 0;
+      return 0.00;
+    } else if(probit > 8.09) {
+      return 100.00
     }
     return 50 * (1 + ((probit - 5) / Math.abs(probit - 5)) * this.erf(Math.abs(probit - 5) / Math.sqrt(2)));
 
