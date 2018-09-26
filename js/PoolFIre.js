@@ -17,6 +17,7 @@ var humedadRelativa = 60; //(%)
    - Para fugas continuas revisar Kakosimos pp51
       - Fuga contunia desde tanques (Horizontales, verticales, esferas... como Aloha)
       - Fuga continua desde tubería
+
 */
 
 class PoolFire {
@@ -33,7 +34,7 @@ class PoolFire {
     // - cP - Capacidad calorica (KJ/kg*K) - DB f(T)
     this.cPKJKGK = (parseFloat(this.sustancia.cpla) + parseFloat(this.sustancia.cplb * tAmbK) + parseFloat(this.sustancia.cplc * Math.pow(tAmbK, 2)) + parseFloat(this.sustancia.cpld * Math.pow(tAmbK, 3))) / (this.sustancia.mw)
     //- densLiquid - Densidad del liquido a temperatura de ebullición (kg/m3) - DB f(t) YAWS-pp185
-    this.densLiquidATB = this.sustancia.dliqa * Math.pow(this.sustancia.dliqb, -1*Math.pow((1 - this.sustancia.tb / this.sustancia.tc), this.sustancia.dliqn)) * 1000;
+    this.densLiquidATB = this.sustancia.dliqa * Math.pow(this.sustancia.dliqb, -1 * Math.pow((1 - this.sustancia.tb / this.sustancia.tc), this.sustancia.dliqn)) * 1000;
     // Entalpia de vaporizacion (kJ/kg) - a la temperatura de ebullicion CCPS 234 ej
     this.hVapKJKGTB = parseFloat(this.hVapKJKG) + parseFloat(this.cPKJKGK) * (this.tEbullK - tAmbK);
     // Formula para SEP verifica si es o no hidrocarburo
@@ -200,7 +201,7 @@ class PoolFire {
     let pressureLevel = 101325.0 * Math.pow(1 - 2.5577E-5 * altitudMSNM, 5.25588); //(Pa)
     var densAir = pressureLevel / (R_DRY_AIR * (tAmbK)); //(kg/m3)
     if (this.isAlturaFlamaThomas) {
-      if(velocidadVientoMSEG == 0){
+      if (velocidadVientoMSEG == 0) {
         //Ver MM/INFORMACION - Estimation_of_thermal_effects_on_receptor_from_poo.pdf
         return 42.0 * this.poolDiameter() * (Math.pow(this.burningRate() / (densAir * Math.sqrt(G * this.poolDiameter())), 0.61));
       }
@@ -333,11 +334,49 @@ class PoolFire {
   qTermAtX(x) {
     // Calculo para POINT SOURCE MODEL
     if (this.isPointSourceModel) {
-      let poolArea = (Math.PI*Math.pow(this.poolDiameter(),2))/4; //Area del pool fire
-      return this.ta(x) * this.combustionFractionPointSource * this.burningRate() * this.hCombKJKG * this.viewFactor(x)*poolArea
+      let poolArea = (Math.PI * Math.pow(this.poolDiameter(), 2)) / 4; //Area del pool fire
+      return this.ta(x) * this.combustionFractionPointSource * this.burningRate() * this.hCombKJKG * this.viewFactor(x) * poolArea
     }
     //Calculo para SOLID PLUME MODEL
     return this.SEP() * this.viewFactor(x) * this.ta(x);
+  }
+
+  /*TODO: ---------------- PROBIT - Eisenberg CCPS 269 ----------------
+ - Intensidad = qTermAtX (kW/m2)
+ - t - Tiempo de exposision (s)
+ */
+  probit(tiempoExposicionS, x) {
+    return -14.9 + 2.56 * Math.log(tiempoExposicionS * Math.pow(this.qTermAtX(x) * 1000, 4 / 3) / 10000);
+    // probitObj.quemaduras2oGrdo = 
+  }
+
+  //Function erf
+  erf(x) {
+    // erf(x) = 2/sqrt(pi) * integrate(from=0, to=x, e^-(t^2) ) dt
+    // with using Taylor expansion, 
+    //        = 2/sqrt(pi) * sigma(n=0 to +inf, ((-1)^n * x^(2n+1))/(n! * (2n+1)))
+    // calculationg n=0 to 50 bellow (note that inside sigma equals x when n = 0, and 50 may be enough)
+    var m = 1.00;
+    var s = 1.00;
+    var sum = x * 1.0;
+    for (var i = 1; i < 50; i++) {
+      m *= i;
+      s *= -1;
+      sum += (s * Math.pow(x, 2.0 * i + 1.0)) / (m * (2.0 * i + 1.0));
+    }
+    return 2 * sum / Math.sqrt(3.14159265358979);
+  }
+
+  probitPrcFatalidades(te, x) {
+    let probit = this.probit(te, x);
+    if(probit < 0) {
+      return 0;
+    }
+    return 50 * (1 + ((probit - 5) / Math.abs(probit - 5)) * this.erf(Math.abs(probit - 5) / Math.sqrt(2)));
+
+    //COn la libreria mathjs
+    //  return 50*(1+((probit-5)/Math.abs(probit-5))*math.erf(Math.abs(probit-5)/Math.sqrt(2)));
+
   }
 
 }
@@ -387,6 +426,7 @@ console.log(`SEP: ${newPF.SEP()} kW/m2`)
 console.log(`ta: ${newPF.ta(20.64)} kW/m2`)
 console.log(`View factor: ${newPF.viewFactor(20.64)}`)
 
-for(x = 1; x<30; x = x+.1){
-console.log(`Radiación térmica: ${x} m - ${parseFloat(newPF.qTermAtX(x)).toFixed(2)} kW/m2`)
+var tiempoExpos = 40 //seg
+for (x = 1; x < 30; x = x + .1) {
+  console.log(`Radiación térmica: ${parseFloat(x).toFixed(1)} m - ${parseFloat(newPF.qTermAtX(x)).toFixed(2)} kW/m2 - Probit: ${parseFloat(newPF.probit(tiempoExpos,x).toFixed(3))} - Porcentaje = ${newPF.probitPrcFatalidades(tiempoExpos,x)}`)
 }
